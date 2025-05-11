@@ -178,7 +178,7 @@ std::string ABXClient::readString(const uint8_t* buffer, size_t length) {
 
 int main() {
     try {
-        ABXClient client;
+        ABXClient client("127.0.0.1", 3000);
         std::cout << "Connecting to server..." << std::endl;
         client.connect();
         
